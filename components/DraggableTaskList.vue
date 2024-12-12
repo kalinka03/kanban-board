@@ -128,7 +128,9 @@ export default {
   width: auto;
   flex: 1 1 auto;
 }
-
+.task-list{
+  min-height: 40px;
+}
 .task-list__delete {
   width: 60px;
   min-width: 60px;
