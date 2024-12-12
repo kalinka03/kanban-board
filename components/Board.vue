@@ -1,7 +1,7 @@
 <template>
   <div class="board">
     <div class="board__title">
-      <h1>Доска проекта - Яхты </h1>
+      <h1>Canban </h1>
     </div>
   </div>
 </template>

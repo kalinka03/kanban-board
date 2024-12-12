@@ -38,6 +38,7 @@
 
 <script>
 export default {
+  inheritAttrs: false,
   props: {
     showPopup: Boolean,
     task: Object,

@@ -2,23 +2,28 @@
 export default defineNuxtConfig({
   components: true,
   ssr: true,
+
   css: [
     '@fortawesome/fontawesome-free/css/all.min.css'
   ],
+
   app: {
     head: {
       title: 'Trello Test',
       meta: [{ name: 'description', content: 'TEST' }],
     },
   },
+
   vue: {
     compilerOptions: {
       devtools: false,
     },
   },
+
   plugins: [
     '~/plugins/pinia.js',
   ],
+
   localforage: {
     instances: [
       {
@@ -27,4 +32,6 @@ export default defineNuxtConfig({
       },
     ],
   },
+
+  compatibilityDate: '2024-12-12',
 });

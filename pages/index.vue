@@ -33,6 +33,7 @@ import { ref, onMounted } from "vue";
 import { useTasksStore } from "@/store/tasks";
 import DraggableTaskList from "@/components/DraggableTaskList.vue";
 import Board from '@/components/Board.vue';
+
 export default {
   components: {
     DraggableTaskList,
@@ -70,7 +71,6 @@ export default {
 
     const saveTask = (updatedTask) => {
       if (updatedTask.id) {
-        // Якщо є id, це редагування
         tasksStore.updateTask(updatedTask);
       } else {
         tasksStore.addTask(updatedTask);
@@ -84,7 +84,8 @@ export default {
       taskPriority.value = task.priority || "Medium";
       showPopup.value = true;
     };
-    const openCreateTaskPopup = () => {
+
+    const openCreateTaskPopup = (status) => {
       taskToEdit.value = { title: "", description: "", status: status || 'TODO' };
       showPopup.value = true;
     };
@@ -110,6 +111,7 @@ export default {
   },
 };
 </script>
+
 
 <style scoped>
 .btn-create-task {

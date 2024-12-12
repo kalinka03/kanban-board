@@ -22,10 +22,10 @@
 
     <div v-if="isDeleteModalVisible" class="delete-modal-overlay">
       <div class="delete-modal">
-        <p>Вы действительно хотите удалить задачу?</p>
+        <p>Ви дійсно хочете удалити задачу?</p>
         <div class="delete-modal__btn">
-          <button @click="deleteTask(taskIdToDelete)" class="confirm-delete">Да</button>
-          <button @click="cancelDelete" class="cancel-delete">Нет</button>
+          <button @click="deleteTask(taskIdToDelete)" class="confirm-delete">Так</button>
+          <button @click="cancelDelete" class="cancel-delete">Ні</button>
         </div>
       </div>
     </div>
