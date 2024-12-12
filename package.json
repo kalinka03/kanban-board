@@ -1,0 +1,22 @@
+{
+  "name": "trello-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "@nuxtjs/localforage": "^1.1.0",
+    "nuxt": "^3.14.1592",
+    "pinia": "^2.3.0",
+    "vue": "latest",
+    "vue-draggable-next": "^2.2.1",
+    "vue-router": "latest",
+    "vuedraggable": "^4.1.0"
+  }
+}
